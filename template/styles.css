@@ -253,3 +253,92 @@ button:-moz-focusring,
 .cu-button:hover {
   background-color: #fac756;
 }
+
+/* Edit Mode Styles */
+#edit-mode-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-mode-btn {
+  background-color: #164e87;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.edit-mode-btn:hover {
+  background-color: #0f3a66;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.edit-mode-btn.active {
+  background-color: #d32f2f;
+}
+
+.edit-mode-btn.active:hover {
+  background-color: #b71c1c;
+}
+
+.save-btn {
+  background-color: #2e7d32;
+}
+
+.save-btn:hover {
+  background-color: #1b5e20;
+}
+
+.edit-mode .chapter {
+  outline: 2px dashed rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+
+.edit-mode .editable-content {
+  outline: 2px solid rgba(76, 175, 80, 0.5);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 3px;
+  min-height: 1em;
+}
+
+.edit-mode .editable-content:focus {
+  outline: 2px solid #4caf50;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.edit-mode .chapter-title {
+  outline: 2px solid rgba(76, 175, 80, 0.5);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 3px;
+  min-height: 1em;
+  display: block;
+}
+
+.edit-mode .chapter-title:focus {
+  outline: 2px solid #4caf50;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.edit-mode-label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 10px;
+  color: #4caf50;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
